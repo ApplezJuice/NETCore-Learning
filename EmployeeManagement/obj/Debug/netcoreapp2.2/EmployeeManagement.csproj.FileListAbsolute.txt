@@ -12,3 +12,12 @@ C:\Users\mhayes\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\net
 C:\Users\mhayes\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorTargetAssemblyInfo.cache
 C:\Users\mhayes\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.dll
 C:\Users\mhayes\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.pdb
+C:\Users\mhayes\source\repos\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.Views.dll
+C:\Users\mhayes\source\repos\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.Views.pdb
+C:\Users\mhayes\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.TagHelpers.input.cache
+C:\Users\mhayes\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.TagHelpers.output.cache
+C:\Users\mhayes\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorCoreGenerate.cache
+C:\Users\mhayes\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Details.g.cshtml.cs
+C:\Users\mhayes\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorTargetAssemblyInfo.cs
+C:\Users\mhayes\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.Views.pdb
+C:\Users\mhayes\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.csproj.CopyComplete
