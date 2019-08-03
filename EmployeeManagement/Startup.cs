@@ -51,6 +51,8 @@ namespace EmployeeManagement
             //app.UseFileServer();
             app.UseStaticFiles();
             //app.UseMvcWithDefaultRoute();
+
+            //Conventional routing example:
             app.UseMvc(routes =>
             {
                 routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");

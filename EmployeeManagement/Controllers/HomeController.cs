@@ -18,18 +18,19 @@ namespace EmployeeManagement.Controllers
         {
             _employeeRepository = employeeRepository;
         }
-
+        
         public ViewResult Index()
         {
             var model = _employeeRepository.GetAllEmployees();
             return View(model);
         }
 
-        public ViewResult Details(int id)
+        public ViewResult Details(int? id)
         {
             HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
             {
-                Employee = _employeeRepository.GetEmployee(id),
+                // id??1 = if the incoming id parameter is not null, then use that value else then use default value of 1
+                Employee = _employeeRepository.GetEmployee(id??1),
                 PageTitle = "EmployeeDetails"
             };
 
