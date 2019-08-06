@@ -13,10 +13,17 @@ namespace EmployeeManagement.Models
         {
             _employeeList = new List<Employee>()
             {
-                new Employee() { Id=1, Name="Mike", Department="IT-Events", Email="mh@blizzard.com" },
-                new Employee() { Id=2, Name="Chris", Department="IT-Events", Email="cd@blizzard.com" },
-                new Employee() { Id=3, Name="Dat", Department="Test", Email="dh@blizzard.com" }
+                new Employee() { Id=1, Name="Mike", Department=Dept.IT, Email="mh@blizzard.com" },
+                new Employee() { Id=2, Name="Chris", Department=Dept.HR, Email="cd@blizzard.com" },
+                new Employee() { Id=3, Name="Dat", Department=Dept.Payroll, Email="dh@blizzard.com" }
             };
+        }
+
+        public Employee Add(Employee employee)
+        {
+            employee.Id = _employeeList.Max(e => e.Id) + 1;
+            _employeeList.Add(employee);
+            return employee;
         }
 
         public IEnumerable<Employee> GetAllEmployees()
