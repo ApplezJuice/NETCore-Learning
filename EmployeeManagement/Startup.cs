@@ -6,6 +6,7 @@ using EmployeeManagement.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -25,9 +26,18 @@ namespace EmployeeManagement
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            // add pool provides pooling, instead of creating a brand new instance, it checks to see if it has one
+            // if there is one available, this is returned
+            // better over dbcontext method
+            // need to specify the provider and connection string
+            services.AddDbContextPool<AppDbContext>(options => options.UseSqlServer(_config.GetConnectionString("EmployeeDBConnection")));
+
+
             services.AddMvc().AddXmlSerializerFormatters();
             // if someone like the home controller requests the IEmployeeRepository service, create an instance of the MockeEmployeeRepository class
-            services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
+            //services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
+            // addscoped because we want it to be alive and available for the entire scope of the request then a new instance upon a new request
+            services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
