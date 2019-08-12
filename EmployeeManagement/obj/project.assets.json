@@ -12086,11 +12086,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mhayes\\source\\repos\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj",
+      "projectUniqueName": "C:\\Users\\mhayes\\Documents\\Repos\\NETCore-Learning\\EmployeeManagement\\EmployeeManagement.csproj",
       "projectName": "EmployeeManagement",
-      "projectPath": "C:\\Users\\mhayes\\source\\repos\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj",
+      "projectPath": "C:\\Users\\mhayes\\Documents\\Repos\\NETCore-Learning\\EmployeeManagement\\EmployeeManagement.csproj",
       "packagesPath": "C:\\Users\\mhayes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mhayes\\source\\repos\\EmployeeManagement\\EmployeeManagement\\obj\\",
+      "outputPath": "C:\\Users\\mhayes\\Documents\\Repos\\NETCore-Learning\\EmployeeManagement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
