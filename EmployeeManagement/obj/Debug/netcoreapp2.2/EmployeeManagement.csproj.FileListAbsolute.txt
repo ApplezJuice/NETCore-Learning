@@ -55,3 +55,5 @@ C:\Users\mhayes\Documents\Repos\NETCore-Learning\EmployeeManagement\obj\Debug\ne
 C:\Users\mhayes\Documents\Repos\NETCore-Learning\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.pdb
 C:\Users\mhayes\Documents\Repos\NETCore-Learning\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.csproj.CopyComplete
 C:\Users\mhayes\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Edit.g.cshtml.cs
+C:\Users\mhayes\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\EmployeeNotFound.g.cshtml.cs
+C:\Users\mhayes\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Shared\NotFound.g.cshtml.cs

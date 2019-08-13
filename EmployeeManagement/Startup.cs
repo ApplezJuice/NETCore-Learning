@@ -51,6 +51,18 @@ namespace EmployeeManagement
                 //};
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                // placeholder {0} = status code
+                // page not found will give a 302 to temp redirect to /error/404
+                // 404 is passed because it was a 404 but the status code was never sent because it was sent a 302
+                //app.UseStatusCodePagesWithRedirects("/Error/{0}");
+
+                // this re-executes the pipeline 
+                // shows the status 404 and not a 302 redirect
+                // the site traverses all the way down the pipeline, then on the way back it see's the 404
+                app.UseStatusCodePagesWithReExecute("/Error/{0}");
+            }
 
             // file server over UseStaticFiles and UseDefaultFiles allows us to combine the functionality of the 2 and
             // add in UseDirectoryBrowser middleware
@@ -68,11 +80,11 @@ namespace EmployeeManagement
                 routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
             });
 
-            app.Run(async (context) =>
-            {
-                //throw new Exception("Some error processing the request");
-                await context.Response.WriteAsync("Hosting Environment: " + env.EnvironmentName);
-            });
+            //app.Run(async (context) =>
+            //{
+            //    //throw new Exception("Some error processing the request");
+            //    await context.Response.WriteAsync("Hosting Environment: " + env.EnvironmentName);
+            //});
         }
     }
 }
